@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <div class="card" style="width: 55rem;">
+                    <h5 class="card-header">{{ release.name }}</h5>
+                    <div class="card-body">
+                        <img src="{{ release.image.url }}" alt="..">
+                        <h5 class="card-title">{{ release.name }}</h5>
+                        <p class="card-text">{{ release.description }}</p>
+                        <a href="#" class="btn btn-primary">Add critics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

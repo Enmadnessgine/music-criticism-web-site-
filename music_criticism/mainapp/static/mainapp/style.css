@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(155, 148, 148);
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.titleop {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.789);
+}
+.card {
+    margin: 15px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.container {
+    margin-left: 300px;
+}
+
+.navbar {
+    background-color: aliceblue;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .auth-links {
+    text-align: center;
+  }
+
+  .auth-link {
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }

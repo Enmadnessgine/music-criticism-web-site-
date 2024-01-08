@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+  <div class='titleop'>
+    <h1>Music criticism</h1>
+    <h2>Rate music releases here!</h2>
+  </div>
+    <div class="row">
+      {% for item in releases %}
+      <div class="card" style="width: 16rem;">
+          <div class="card-body">
+              <img src="{{ item.image.url }}" alt="..">
+            <div class="media">
+              <div class="media-body">
+                <h5 class="card-title">{{ item.name }}</h5>
+                <p class="card-text">{{ item.category }}</p>
+                <p class="card-text">{{ item.pub_date }}</p>
+                <a href="release/{{ item.id }}/" class="btn btn-primary">Show detail</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
