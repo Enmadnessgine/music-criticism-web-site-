@@ -23,12 +23,3 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['text']
-#class CommentForm(forms.Form):
-#    release = forms.ModelChoiceField(
-#        queryset=Release.objects.all(),
-#        widget=ModelSelect2Widget(
-#            model=Release,
-#            search_fields=['name__icontains'],
-#        )
-#    )
-#    text = forms.CharField(label='Critics', widget=forms.Textarea(attrs={'class':'form-control', 'rows': 5}))
