@@ -1,9 +1,11 @@
 body {
-    background-color: rgb(155, 148, 148);
+    background-color: rgb(230, 224, 224);
     display: flex;
     min-height: 100vh;
     margin: 0;
 }
+
+
 
 .titleop {
   text-align: center;

@@ -1,23 +1,24 @@
 <div class="sidebar">
     <div class="logo">
+      <img src="media\images\CompressJPEG.online_(100x100).png" alt="..">
       <h3>Music criticism</h3>
     </div>
-
     <a href="{% url 'index' %}" class="btn btn-primary">Main page</a>
     <button class="btn btn-primary">Page 1</button>
-    <button class="btn btn-primary">Page 2</button>
-    <button class="btn btn-primary">Page 3</button>
+
 
     <div class="auth-links">
-      <h4>LogIn/SignIn</h4>
-      <!-- Ваши ссылки для авторизации/регистрации -->
-      <a class="auth-link" href="#">LogIn</a> | <a class="auth-link" href="#">SignIn</a>
+      {% if request.user.is_authenticated %}
+        <h4>Hello, {{ user.username }}!</h4>
+        <a class="auth-link" href="{% url 'logout' %}">LogOut</a>
+      {% else %}
+        <h4>LogIn/SignIn</h4>
+        <a class="auth-link" href="{% url 'login' %}">LogIn</a> | <a class="auth-link" href="{% url 'signin' %}">SignIn</a>
+      {% endif %}
+      
     </div>
   </div>
 
-
-
-  <!-- Подключение Bootstrap JS (необходимо для некоторых функций Bootstrap) -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

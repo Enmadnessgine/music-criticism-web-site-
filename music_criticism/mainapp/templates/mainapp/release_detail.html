@@ -10,9 +10,19 @@
                         <img src="{{ release.image.url }}" alt="..">
                         <h5 class="card-title">{{ release.name }}</h5>
                         <p class="card-text">{{ release.description }}</p>
-                        <a href="#" class="btn btn-primary">Add critics</a>
+                        <a href="{% url 'add_comment' release.id %}" class="btn btn-primary">Add critics</a>
                     </div>
                 </div>
+
+                <h3>Critics users</h3>
+                {% for comment in comments %}
+                    <div class="card" style="width: 55rem;">
+                        <h5 class="card-header">{{ comment.user }} criticizes:</h5>
+                        <div class="card-body">
+                            <p class="card-text">{{ comment.text }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>

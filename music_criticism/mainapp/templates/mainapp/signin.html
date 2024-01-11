@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <h1>SIGNIN</h1>
+                <form action='{% url 'signin' %}'method='POST'>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type='submit' class='btn btn-primary btn-block'>SignIn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
