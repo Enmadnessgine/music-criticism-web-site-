@@ -61,15 +61,6 @@ class ReleaseDetailView(DetailView):
     context_object_name = 'release'
 
 
-#def add_comment(request):
-#    if request.method == 'POST':
-#        form = CommentForm(request.POST)
-#        if form.is_valid():
-#            Comment.objects.create(**form.cleaned_data)
-#    else:
-#        form = CommentForm()
-#    return render(request, 'mainapp/add_comment.html', {'form': form})
-
 def add_comment(request, release_id):
     release = get_object_or_404(Release, pk=release_id)
 
