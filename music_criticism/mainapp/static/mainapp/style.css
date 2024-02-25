@@ -27,6 +27,11 @@ body {
     background-color: aliceblue;
 }
 
+.h6, h6 {
+  font-size: 1rem;
+  padding-inline-start: 10px;
+}
+
 .sidebar {
     position: fixed;
     width: 250px;

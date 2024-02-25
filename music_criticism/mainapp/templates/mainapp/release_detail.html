@@ -17,7 +17,12 @@
                 <h3>Critics users</h3>
                 {% for comment in comments %}
                     <div class="card" style="width: 55rem;">
-                        <h5 class="card-header">{{ comment.user }} criticizes:</h5>
+                        <h4 class="card-header">{{ comment.user }} criticizes:</h5>
+                        <h6 class="card-text">Text grade: {{ comment.text_grade }}</h6>
+                        <h6 class="card-text">Charisma grade: {{ comment.charisma_grade }}</h6>
+                        <h6 class="card-text">Realization style grade: {{ comment.realizationstyle_grade }}</h6>
+                        <h6 class="card-text">Structure and rhythm: {{ comment.structurerhythm }}</h6>
+                        <h6 class="card-text">Rate grade: {{ comment.rate_grade }}</h6>
                         <div class="card-body">
                             <p class="card-text">{{ comment.text }}</p>
                         </div>

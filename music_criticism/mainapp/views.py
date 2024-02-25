@@ -81,3 +81,6 @@ def release_detail(request, release_id):
     release = get_object_or_404(Release, pk=release_id)
     comments = Comment.objects.filter(release=release)
     return render(request, 'mainapp/release_detail.html', {'release': release, 'comments': comments})
+
+def about(request):
+    return render(request, 'mainapp/about.html')
