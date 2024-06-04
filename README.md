@@ -32,4 +32,7 @@ Music Criticim - this is a site for music lovers and those who want to leave the
 
 <h2>Demonstration:</h2>
 
+![error](https://github.com/Enmadnessgine/music-criticism-web-site-/blob/main/mc1.jpg?raw=true)
 
+
+![error](https://github.com/Enmadnessgine/music-criticism-web-site-/blob/main/mc2.jpg?raw=true)
