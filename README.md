@@ -4,6 +4,16 @@ Music Criticim - this is a site for music lovers and those who want to leave the
 
 <hr>
 
+<h2>Possibilities:</h2>
+<ul>
+  <li>Use acoounts system;</li>
+  <li>Writing crititc music releases;</li>
+  <li>Add new music releases for site;</li>
+  <li>Read another critics for releases;</li>
+</ul>
+
+<hr>
+
 <h2>Technologies:</h2>
 <ul>
   <li>Python;</li>
