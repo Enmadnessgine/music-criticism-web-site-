@@ -36,6 +36,7 @@ Music Criticim - this is a site for music lovers and those who want to leave the
       <li><code>pip install pillow</code></li>
     </ol>
   </li>
+  <li>Run django localserver: <code>python manage.py runserver</code></li>
 </ol>
 
 <hr>
