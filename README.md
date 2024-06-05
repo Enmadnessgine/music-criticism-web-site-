@@ -34,6 +34,7 @@ Music Criticism - this is a site for music lovers and those who want to leave th
       <li><code>pip install django</code></li>
       <li><code>pip install django-crispy-forms</code></li>
       <li><code>pip install pillow</code></li>
+      <li>Creating & connecting database</li>
     </ol>
   </li>
   <li>Run django localserver: <code>python manage.py runserver</code></li>
