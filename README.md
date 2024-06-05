@@ -1,13 +1,13 @@
 <h2>About Music Criticism</h2>
-Music Criticim - this is a site for music lovers and those who want to leave their constructive reviews of music releases. The site provides the ability to add music releases 
+Music Criticism - this is a site for music lovers and those who want to leave their constructive reviews of music releases. The site provides the ability to add music releases 
 (sorted by genre and their descriptions) and write reviews of them with a detailed assessment of many components of the composition.
 
 <hr>
 
 <h2>Possibilities:</h2>
 <ul>
-  <li>Use acoounts system;</li>
-  <li>Writing crititc music releases;</li>
+  <li>Use accounts system;</li>
+  <li>Writing critic music releases;</li>
   <li>Add new music releases for site;</li>
   <li>Read another critics for releases;</li>
 </ul>
